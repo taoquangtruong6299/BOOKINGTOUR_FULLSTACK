@@ -1,0 +1,32 @@
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	background: url(../img/head.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.section-title.center {
+	padding: 10px 0 40px 0;
+}
+.intro h1 {
+	color: rgba(255,255,255,0.9);
+	font-size: 64px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.intro p {
+	color: rgba(255,255,255,0.8);
+	font-size: 22px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+header .intro-text {
+	padding-top: 250px;
+	padding-bottom: 200px;
+}
