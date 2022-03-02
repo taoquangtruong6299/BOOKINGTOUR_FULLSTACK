@@ -1,0 +1,202 @@
+export default function Details() {
+    return (
+      <>
+        <div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	
+	<div class="sidenav-content">
+		<p>
+			Kuncen WB1, Wirobrajan 10010, DIY
+		</p>
+		<p>
+			<span class="fs-16 primary-color">(+68) 120034509</span>
+		</p>
+		<p>info@yourdomain.com</p>
+	</div>
+</div>	<div id="side-search" class="sidenav">
+	<a href="javascript:void(0)" id="side-search-close">&times;</a>
+	<div class="sidenav-content">
+		<form action="">
+
+			<div class="input-group md-form form-sm form-2 pl-0">
+			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search" />
+			  <div class="input-group-append">
+			    <button class="input-group-text red lighten-3" id="basic-text1">
+			    	<i class="fas fa-search text-grey" aria-hidden="true"></i>
+			    </button>
+			  </div>
+			</div>
+
+		</form>
+	</div>
+	
+ 	
+</div>	<div id="canvas-overlay"></div>
+	<div class="boxed-page">
+		<nav id="navbar-header" class="navbar navbar-expand-lg">
+    <div class="container">
+        <a style={{color: '#272727', fontWeight: 'bold'}} class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
+            {/* <img src={require("../img/logo.png")} alt="" /> */}
+            eBOOKING
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-between">
+                <li class="nav-item only-desktop">
+                    <a class="nav-link" id="side-nav-open" href="#">
+                        <span class="lnr lnr-menu"></span>
+                    </a>
+                </li>
+                <div class="d-flex flex-lg-row flex-column">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Special Dishes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="special-dishes.html">Beef Steak Sauce</a>
+                          <a class="dropdown-item" href="special-dishes.html">Salmon Zucchini</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+            
+            <a style={{color: '#272727', fontWeight: 'bold'}} class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
+                {/* <img src={require("../img/logo.png")} alt=""/> */}
+                eBOOKING
+            </a>
+            <ul class="navbar-nav d-flex justify-content-between">
+                <div class="d-flex flex-lg-row flex-column">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                </div>
+                <li class="nav-item">
+                    <a id="side-search-open" class="nav-link" href="#">
+                        <span class="lnr lnr-magnifier"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>		
+<section id="gtco-special-dishes" class="bg-grey section-padding">
+    <div class="container">
+        <div class="section-content">
+            <div class="heading-section text-center">
+                <span class="subheading">
+                    Specialties
+                </span>
+                <h2>
+                    Special Dishes
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">01.</h2>
+                    <div class="dishes-text">
+                        <h3><span>Beef</span><br/> Steak Sauce</h3>
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident libero qui eum, corporis esse quos excepturi soluta?</p>
+                        <h3 class="special-dishes-price">$15.00</h3>
+                        <a href="#" class="btn-primary mt-3">book this tour</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src={require("../img/steak.jpg")} alt="" class="img-fluid shadow w-100"/>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src={require("../img/salmon-zucchini.jpg")} alt="" class="img-fluid shadow w-100"/>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">02.</h2>
+                    <div class="dishes-text">
+                        <h3><span>Salmon</span><br/> Zucchini</h3>
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus eius. In a quis quibusdam omnis atque vero dolores!</p>
+                        <h3 class="special-dishes-price">$12.00</h3>
+                        <a href="#" class="btn-primary mt-3">book this tour <span><i class="fa fa-long-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<footer class="mastfoot pb-5 bg-white section-padding pb-0">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-lg-4">
+         		<div class="footer-widget pr-lg-5 pr-0">
+         			<img src={require("../img/logo.png")} class="img-fluid footer-logo mb-3" alt=""/>
+	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
+	         		<nav class="nav nav-mastfoot justify-content-start">
+		                <a class="nav-link" href="#">
+		                	<i class="fab fa-facebook-f"></i>
+		                </a>
+		                <a class="nav-link" href="#">
+		                	<i class="fab fa-twitter"></i>
+		                </a>
+		                <a class="nav-link" href="#">
+		                	<i class="fab fa-instagram"></i>
+		                </a>
+		            </nav>
+         		</div>
+         		
+         	</div>
+         	<div class="col-lg-4">
+         		<div class="footer-widget px-lg-5 px-0">
+         			<h4>Open Hours</h4>
+	         		<ul class="list-unstyled open-hours">
+		                <li class="d-flex justify-content-between"><span>Monday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Thursday</span><span>9:00 - 24:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Friday</span><span>9:00 - 02:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Saturday</span><span>9:00 - 02:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
+		              </ul>
+         		</div>
+         		
+         	</div>
+
+         	<div class="col-lg-4">
+         		<div class="footer-widget pl-lg-5 pl-0">
+         			<h4>Newsletter</h4>
+	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	         		<form id="newsletter">
+						<div class="form-group">
+							<input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Enter email" />
+						</div>
+						<button type="submit" class="btn btn-primary w-100">Submit</button>
+					</form>
+         		</div>
+         		
+         	</div>
+         	<div class="col-md-12 d-flex align-items-center">
+         		<p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
+         	</div>
+            
+        </div>
+    </div>
+        </footer>	
+        </div>
+	
+      </>
+    );
+  }
